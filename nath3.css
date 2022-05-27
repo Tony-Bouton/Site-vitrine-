@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
+  /*  background: url(titre2.gif) no-repeat ; */
+  background-position: top;
+  transform: translateY(-117px);
+  height: 730px;
+  overflow-x: none;
+  overflow-y: auto;
+}
+
+main {
+  margin-top: 2rem;
+  /* background: rgba(255, 255, 255, 0.466); */
+  border-radius: 10px;
+}
+/* -----------------------------ELEMENTS-----------------> */
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  animation: trans 0.5s ease-in-out;
+  color: rgb(143, 92, 121);
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 40px;
+  color: rgba(255, 99, 125, 0.733);
+}
+
+h2 {
+  margin-left: 50px;
+  padding: 30px;
+  color: rgba(255, 99, 125, 0.623);
+  letter-spacing: 3px;
+  animation: trans 0.3s ease-out;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 10px;
+}
+
+li {
+  padding: 3px;
+}
+
+/* //-----------------------TITRE------------------> */
+
+header {
+  z-index: -2;
+  display: contents;
+}
+
+.title {
+  font: size 40px;
+  animation: apparition 1s ease-out;
+}
+
+.title2 {
+  font-size: 40px;
+
+  margin-left: 195px;
+  animation: apparition2 1s ease-out;
+  color: rgb(143, 92, 121);
+}
+
+/* ----------------------------------IMAGE-------------------->/*  */
+
+.papillon {
+  background: url(papillon2.png) no-repeat center;
+  height: 167px;
+  background-position: top;
+  position: relative;
+
+  top: 5rem;
+  left: 3rem;
+  z-index: -1;
+  animation: envol 1s ease-in-out forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  transform: translateZ(0px);
+}
+
+.image {
+  background: url(enfants1.png) center/contain no-repeat;
+  height: 20rem;
+}
+
+.image1 {
+  background: url(parents1.png) center/contain no-repeat;
+  position: relative;
+  height: 20rem;
+  width: 250px;
+  top: 33px;
+  left: 75px;
+  transition: 2s;
+}
+
+/* -----------------------------------EFFETS KEYFRAMES Titres-------------> */
+
+@keyframes apparition {
+  from {
+    opacity: 1;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes apparition2 {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes envol {
+  from {
+    opacity: 0;
+    transform: translateY(100px) translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) translateY(0);
+  }
+}
+
+/* -----------------------NAVIGATION---------------> */
+#chercher {
+  padding: auto;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(143, 92, 121);
+  cursor: pointer;
+}
+
+nav {
+  background: rgba(255, 99, 125, 0.733);
+  border-radius: 10px;
+  color: white;
+  height: 1.5rem;
+  box-shadow: 12px -1px 20px white;
+  text-transform: uppercase;
+  transform: translateY(-20px);
+}
+
+/*  -------------------------MAin---------------------> */
+
+.fixed {
+  margin: 50px;
+  margin-top: 20px;
+  border: solid 5px rgba(255, 99, 125, 0.473);
+
+  border-radius: 10px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.678);
+  transform: translateY(-25px);
+  size-adjust: fixed;
+  max-height: 536.6px;
+  height: 466.6px;
+  /* height: 511px;
+    width: 713px;
+    position: relative;
+    top: 10px;
+    left: 91px; */
+}
+
+.textes {
+  position: relative;
+  top: -250px;
+  transform: translateX(280px);
+
+  width: 532px;
+  top: -365px;
+  color: rgb(143, 92, 121);
+  list-style: disc rgb(143, 92, 121);
+}
+
+#upper {
+  font-size: 1.5rem;
+  color: rgb(143, 92, 121);
+  text-transform: capitalize;
+  font-family: "Comic Neue", cursive;
+}
+
+.gp {
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+#presentation {
+  margin-top: 1px;
+  transform: translateY(200px);
+  transform: translateX(20px);
+  color: rgb(143, 92, 121);
+  font-weight: bold;
+  height: 530px;
+  position: relative;
+}
+
+.parcours {
+  display: contents;
+
+  position: relative;
+  top: -250px;
+  transform: translateX(280px);
+  width: 250px;
+  width: 532px;
+  top: -323px;
+  color: rgb(143, 92, 121);
+  list-style: disc rgb(143, 92, 121);
+  margin-top: 1px;
+  transform: translateY(200px);
+  transform: translateX(20px);
+  color: rgb(143, 92, 121);
+  font-weight: bold;
+}
+
+/* -------------------------------Keyframes----------------------------> */
+@keyframes trans {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+/* ------------------Masque autre fenetres ---------------> */
+
+#service1 {
+  display: none;
+}
+
+#service2 {
+  display: none;
+}
+
+#service3 {
+  display: none;
+}
+
+#service4 {
+  display: none;
+}
+
+#service5 {
+  display: none;
+}
+
+.active {
+  display: contents;
+}
+
+/* ---------------------FORMULAIRE--------------------> */
+.bt {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.enveloppe {
+  background: url(mail1.png) center/cover no-repeat rgba(255, 99, 125, 0.473);
+  height: 90px;
+  width: 90px;
+  margin: 0;
+  border-radius: 150px;
+  position: relative;
+  top: 33px;
+  left: 336px;
+}
+
+.mail {
+  font-size: 2rem;
+}
+
+/* ---------------------------------------------------POP-UP----------------> */
+
+#popUp {
+  border: solid 3.5px rgba(255, 99, 125, 0.473);
+  border-radius: 10px;
+  position: relative;
+  top: -403px;
+  left: -302px;
+  height: 411px;
+  width: 359px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px rgba(151, 97, 106, 0.747);
+  color: white;
+}
+
+.popup-on {
+  opacity: 0;
+}
+
+#s1 :hover {
+  cursor: pointer;
+  color: rgba(255, 99, 125, 0.473);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  background: #fff;
+  border-radius: 10px;
+
+  transition: all 5s ease-in-out;
+
+  border: solid 3.5px rgba(255, 99, 125, 0.473);
+  border-radius: 10px;
+  position: relative;
+  top: -403px;
+  left: -302px;
+  height: 411px;
+  width: 359px;
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 2px 6px rgba(151, 97, 106, 0.747);
+  color: white;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
+  }
+  .popup {
+    width: 70%;
+  }
+}

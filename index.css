@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Neue", cursive;
+  color: rgb(11, 133, 28);
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+header {
+  height: 10rem;
+  border-radius: 15px;
+  height: 20rem;
+}
+
+.card {
+  height: 20rem;
+  border-radius: 15px;
+}
+
+.parcours {
+  height: 2rem;
+  border-radius: 15px;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "i1 i2";
+  grid-template-rows: 1fr;
+  height: 10rem;
+  justify-content: center;
+  height: 20rem;
+}
+
+#image {
+  grid-area: i1;
+  background: url(nathalie-removebg.png) center no-repeat;
+  border-radius: 15px;
+  background-size: contain;
+  bottom: 20px;
+}
+
+#titre {
+  grid-area: i2;
+  border-radius: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.image {
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "i3 i4";
+  grid-template-rows: 1fr;
+  grid-template-columns: 30% 70%;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+#nav {
+  grid-area: i3;
+  height: 100%;
+
+  border-radius: 15px;
+}
+
+#content {
+  grid-area: i4;
+  height: 100vh;
+  border-radius: 15px;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#image,
+#titre,
+#nav,
+#content,
+.parcours {
+  box-shadow: 1px 2px 6px rgba(72, 222, 195, 0.671);
+  margin: 5px;
+  border: solid rgb(72, 222, 194) 2px;
+}
+
+.gp:hover {
+  height: 50vh;
+  position: relative;
+
+  color: black;
+  background-color: rgb(72, 222, 194);
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100vh;
+
+  background-size: 30%;
+
+  overflow: visible;
+  transition: 0.2s;
+
+  font-size: 20px;
+
+  background-image: none;
+}
+
+.enf:hover {
+  height: 50vh;
+  background-color: rgb(72, 222, 194);
+  background-position: center;
+  color: black;
+
+  color: white;
+  cursor: pointer;
+  border-radius: 20px;
+  width: 100vh;
+
+  background-size: 30%;
+
+  overflow: visible;
+  transition: 0.2s;
+  margin-left: 10vh;
+  margin-bottom: 50vh;
+
+  font-size: 20px;
+  margin-left: 60px;
+  font-family: "Kalam", cursive;
+
+  background-image: none;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "i5 i6";
+  grid-template-rows: 1fr;
+
+  height: 100vh;
+}
+
+li {
+  margin: 40px;
+}
+
+.gp {
+  background: url(parents1.png) center/contain no-repeat;
+  grid-area: i5;
+  height: 10rem;
+}
+
+.enf {
+  background: url(enfants1.png) center/contain no-repeat;
+  grid-area: i6;
+  height: 10rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 22px;
+  margin-top: 130px;
+}

@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300&display=swap');
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    box-sizing: border-box;
+    user-select: none;
+  
+    
+}
+
+p {
+
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#chercher  {
+
+    padding: auto;
+}
+a {
+
+    color: white;
+    text-decoration:none ;
+    transition:1s
+}
+
+a:hover {
+
+    color: rgb(143, 92, 121);
+    
+}
+
+main {
+
+    margin-top: 2rem;
+    /* background: rgba(255, 255, 255, 0.466); */
+    border-radius: 10px;
+    
+}
+
+header {
+
+    z-index: -2;
+    display:contents;
+}
+
+h1 {
+
+    text-align: center;
+    
+    font-size: 40px;
+    color:rgba(255, 99, 125, 0.733)
+}
+
+ul {
+
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 10px;
+}
+
+li {
+
+    padding: 3px;
+}
+
+h2 {
+
+    margin-left: 50px;
+    padding: 30px;
+    color: rgba(255, 99, 125, 0.623);
+    letter-spacing: 3px;
+}
+
+section,article {
+
+    margin: 50px;
+    margin-top: 20px;
+    border: solid 5px  rgba(255, 99, 125, 0.473);
+    
+    
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.678);
+   
+
+}
+
+.change {
+
+    margin: 50px;
+    margin-top: 20px;
+    border: solid 5px rgba(255, 255, 255, 0.678) ;
+    color: white;
+    
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(255, 99, 125, 0.507);
+   transition: 0.3s ease-out ;
+   height: 100%;
+   width: 100%;
+   font-size: larger;
+   text-align: center;
+   
+}
+
+.changeoff {
+
+    margin: 50px;
+    margin-top: 20px;
+    border: solid 5px  rgba(255, 99, 125, 0.473);
+    
+    
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.678);
+   
+
+}
+
+body {
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 60rem;
+ /*  background: url(titre2.gif) no-repeat ; */
+background-position: top;
+transform: translateY(-110px);
+
+
+
+
+
+
+}
+
+.title{
+    
+    font: size 40px; 
+    animation: apparition 1s ease-out;
+    
+  }
+
+  @keyframes apparition {
+
+    from { 
+        opacity:1;
+        transform: translateY(-20px)
+    }
+
+    to {
+
+        opacity: 1;
+        transform: translateY(0)
+    }
+  }
+
+  .title2 {
+
+    font-size: 40px;
+    
+    margin-left: 195px;
+    animation: apparition2 1s ease-out;
+    color: rgb(143, 92, 121);  
+  }
+
+  @keyframes apparition2 {
+
+    from { 
+        
+            opacity:0;
+            transform: translateY(30px)
+    }
+
+    to {
+
+            opacity:1;
+            transform: translateY(0)
+    }
+  }
+
+  
+ 
+
+.image {
+
+    background: url(enfants1.png) center/contain no-repeat ;
+    height: 20rem;
+}
+
+.image1 {
+
+    background: url(parents1.png) center/contain no-repeat;
+    
+    position:relative ;
+    
+    
+    height: 20rem;
+    
+    
+}
+
+input {
+
+    border-radius: 10px;
+    border: none;
+    
+}
+
+form {
+
+  
+  grid-template-columns: 1fr ;
+    grid-template-rows: 1fr  ;
+    grid-template-areas: "i1 i2"
+                         "i3 i4" ;
+
+                        padding: 20px;
+                       text-align: center;
+                       margin-bottom: 300px;
+                           
+}
+
+#nom {
+
+    grid-area: i1;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#prenom {
+
+    grid-area: i2;
+    border-radius: 15px;
+}
+
+#message {
+
+    grid-area: i3 ;
+    height: 100px;
+    border-radius: 15px;
+    width: 200px;
+    padding: 5px;
+}
+
+#envoyer {
+
+    grid-area: i4 ;
+}
+
+#nom,#prenom,#message,#envoyer {
+
+    border: solid rgba(255, 99, 125, 0.733) 1px;
+    padding: 5px;
+}
+
+.papillon {
+
+    background: url(papillon2.png) no-repeat center;
+    height: 167px;
+    background-position: top;
+    position: relative;
+    
+    top: 5rem;
+    left: 3rem;
+    z-index: -1;
+    animation: envol 1s ease-in-out forwards ;
+    animation-delay: 0.3s;
+    opacity: 0;
+
+   
+    
+}
+
+@keyframes envol {
+
+    from {
+
+        opacity:0;
+        transform: translateY(100px) translateX(-50px)
+        
+    }
+
+    to {
+
+        opacity:1;
+        transform: translateY(0) translateY(0);
+        
+    }
+
+   
+}
+
+nav {
+
+    background: rgba(255, 99, 125, 0.733);
+    border-radius: 10px;
+    color: white;
+    height: 1.5rem;
+    box-shadow:  12px -1px 20px white;
+    text-transform: uppercase;
+    
+   
+    
+}
+
+.service {
+
+    text-align: center;
+    
+}
+
+
+placeholder {
+
+    padding: 3px;
+}
+
+.granpa {
+
+    color: blue;
+}
